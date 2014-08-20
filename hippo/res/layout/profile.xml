@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/profCont"
+	    android:layout_margin="5dip"
+	    android:background="@drawable/border"
+	    android:layout_alignParentTop="true"
+	    android:orientation="vertical">
+	    	    	    
+	    <ListView
+	        android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"
+	    	android:id="@+id/myPlay"
+	    	android:layout_margin="5dip"
+	    	android:entries="@array/ranks"
+	    	android:background="@drawable/border">
+	        
+	    </ListView>
+	    	    
+	    <ListView 
+	        android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"
+	    	android:id="@+id/myPub"
+	    	android:layout_margin="5dip"
+	    	android:entries="@array/bests"
+	    	android:background="@drawable/border">
+	        
+	    </ListView>
+	</LinearLayout>
+
+</RelativeLayout>

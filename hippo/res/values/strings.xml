@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HippoActivity!</string>
+    <string name="app_name">Hippo</string>
+    <string name="what">What if</string>
+    <string name="or">Or</string>
+	<string name="question1">question1</string>
+    <string name="question2">question2</string>
+    <string name="make">Makes</string>
+    <string name="category">Category</string>
+
+    <string-array name="type">
+        <item>The Top Better</item>
+        <item>The Bottom Better</item>
+        <item>The Top Worse</item>
+        <item>The Bottom Worse</item>
+        <item>Both Better/Worse</item>
+    </string-array>
+    
+    <string-array name="cat">
+        <item>Abilities</item>
+        <item>Jobs</item>
+        <item>Places</item>
+        <item>People</item>
+    </string-array>
+    
+    <string-array name="ranks">
+        <item>Rank1</item>
+        <item>Rank2</item>
+        <item>rank3</item>
+    </string-array>
+    
+     <string-array name="bests">
+        <item>best1</item>
+        <item>best2</item>
+        <item>best3</item>
+    </string-array>
+    
+</resources>

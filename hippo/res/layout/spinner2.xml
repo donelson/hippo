@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical" >   
+    <Button 
+	        android:id ="@+id/share"
+	        android:layout_width ="wrap_content"
+	        android:layout_height = "wrap_content"
+	        android:layout_margin=".5dip"
+	        android:text="Share on Facebook" 
+	        android:alpha="0"
+	        android:textSize ="8dip"/>
+    <TextView 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="What's Your Hippothetical? Would you rather..."
+	    android:id="@+id/whatHip"
+	    android:textSize="10dip"
+    	android:layout_margin="2.5dip"    
+    	android:textColor="#FFFFFF"
+    	android:layout_alignParentTop="TRUE"/>
+    
+    <EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="Choice 1"
+	    android:id="@+id/choice1"
+	    android:textSize="10dip"
+	    android:layout_margin="2.5dip" />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="or"
+	    android:id="@+id/or"
+	    android:textSize="10dip"
+    	android:layout_margin="2.5dip"/>
+   
+    <EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="Choice 2"
+	    android:id="@+id/choice2"
+	    android:textSize="10dip"
+	    android:layout_margin="2.5dip"/>
+     
+     <TextView 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="What if..."
+	    android:id="@+id/whatHipif"
+	    android:textSize="10dip"
+    	android:layout_margin="2.5dip"/>
+     
+	<EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="Something that makes the Top Better"
+	    android:id="@+id/topBetter"
+	    android:textSize="10dip"
+	    android:layout_margin="2.5dip"/>
+	
+	<EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="Something that makes the Top Worse"
+	    android:id="@+id/topWorse"
+	    android:textSize="10dip"
+	    android:layout_margin="2.5dip" />
+	
+	<EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="Something that makes the Bottom Better"
+	    android:id="@+id/botBetter"
+	    android:textSize="10dip"
+	    android:layout_margin="2.5dip"/>
+	
+	<EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="Something that makes the Bottom Worse"
+	    android:id="@+id/botWorse"
+	    android:textSize="10dip"
+	    android:layout_margin="2.5dip" />
+	  
+	<Spinner 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/spin2"
+	    android:entries="@array/cat"
+	    android:layout_margin="5dip"
+	    android:prompt="@string/category">
+	</Spinner>
+	
+
+</LinearLayout>

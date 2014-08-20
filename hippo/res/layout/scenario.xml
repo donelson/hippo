@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFF">
+	
+	<TextView 
+	    android:id="@+id/wur"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dip"
+        android:text="Would you rather..."
+        android:textSize="20dip" />	
+        
+	<Button 
+        android:id ="@+id/button1"
+        android:layout_width ="fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_margin="10dip"
+        android:text="@string/question1"
+        android:textSize ="20dip"
+        android:layout_below="@id/wur" >
+    </Button>
+   
+	<TextView
+	    android:id="@+id/wi"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content" 
+        android:textSize ="20dip"
+        android:layout_below="@id/button1"/>
+	
+	<TextView 
+        android:id="@+id/prompt1"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_centerInParent="TRUE"
+        android:layout_margin="10dip"
+        android:text="@string/or"
+        android:textSize="20dip" />	
+     
+	 
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_alignParentBottom="TRUE"
+	    android:orientation="horizontal"
+	    android:id="@+id/footBar" >		
+	    
+	    <Button 
+	        android:id ="@+id/buttonBack"
+	        android:layout_width ="wrap_content"
+	        android:layout_height = "wrap_content"
+	        android:layout_margin="5dip"
+	        android:text="Home" 
+	        android:textSize ="20dip"/>
+
+	     <Button 
+	        android:id ="@+id/addCaveat"
+	        android:layout_width ="wrap_content"
+	        android:layout_height = "wrap_content"
+	        android:layout_margin="5dip"
+	        android:text="Add" 
+	        android:textSize ="20dip"/>
+	     
+	     <Button 
+	        android:id ="@+id/choices"
+	        android:layout_width ="wrap_content"
+	        android:layout_height = "wrap_content"
+	        android:layout_margin="5dip"
+	        android:text="Choices" 
+	        android:textSize ="20dip"/>/>
+	    
+	</LinearLayout>	    
+
+	
+		
+	<Button 
+        android:id ="@+id/button2"
+        android:layout_width ="fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_margin="10dip"
+        android:text="@string/question2" 
+        android:textSize ="20dip" 
+        android:layout_above="@id/footBar">
+	</Button>
+        
+    
+	
+</RelativeLayout>

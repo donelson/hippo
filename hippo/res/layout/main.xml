@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+	
+	<Button
+        android:id="@+id/login"
+        android:layout_width ="wrap_content"
+        android:layout_height = "10dip"
+        android:layout_alignParentTop="TRUE"
+        android:layout_alignParentRight="TRUE"
+        android:text="Login/out" 
+        android:textSize ="5dip"/>
+	<Button 
+	    android:id="@+id/buttonStart"
+        android:layout_width ="fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="TRUE"
+        android:layout_margin="5dip"
+        android:text="Start" 
+        android:textSize ="15dip"/>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/ranking"
+	    android:layout_margin="5dip"
+	    android:background="@drawable/border"
+	    android:layout_below="@id/buttonStart">
+	    
+	    <ListView
+	        android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"
+	    	android:id="@+id/rankinglist"
+	    	android:layout_margin="5dip"
+	    	android:entries="@array/ranks"
+	    	android:background="@drawable/border">
+	        
+	    </ListView>
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/best"
+	    android:layout_below="@id/ranking">
+	    
+	    <ListView 
+	        android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"
+	    	android:id="@+id/bestlist"
+	    	android:layout_margin="5dip"
+	    	android:entries="@array/bests"
+	    	android:background="@drawable/border">
+	        
+	    </ListView>
+	</LinearLayout>
+	
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_alignParentBottom="TRUE"
+	    android:orientation="horizontal"
+	    android:id="@+id/footBar1" >		
+	    <Button 
+	        android:id ="@+id/profile"
+	        android:layout_width ="wrap_content"
+	        android:layout_height = "wrap_content"
+	        android:layout_margin="5dip"
+	        android:text="Profile" 
+	        android:textSize ="20dip"/>
+	     <Button 
+	        android:id ="@+id/createHip"
+	        android:layout_width ="wrap_content"
+	        android:layout_height = "wrap_content"
+	        android:layout_margin="5dip"
+	        android:text="Create" 
+	        android:textSize ="20dip"/>
+	     
+	</LinearLayout>	    
+	
+
+</RelativeLayout>

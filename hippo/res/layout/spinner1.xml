@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+    <TextView 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="What's Your What-If?"
+	    android:id="@+id/nameDialog"
+	    android:textSize="20dip"
+    	android:layout_margin="10dip"    
+    	android:textColor="#FFFFFF"/>
+    	
+	<EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="What if..."
+	    android:id="@+id/input"
+	    android:textSize="20dip"
+	    android:layout_margin="10dip" />
+	  
+	<Spinner 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/spin1"
+	    android:entries="@array/type"
+	    android:layout_margin="10dip">
+	</Spinner>
+	
+</LinearLayout>
